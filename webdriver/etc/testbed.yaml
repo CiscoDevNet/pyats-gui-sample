@@ -1,0 +1,34 @@
+# Testbed file demonstrating how drivers are defined in pyATS style testbed
+# yaml file
+
+
+devices:
+
+    # the following is an example of firefox browser
+    firefox:
+        type: browser
+        connections:
+            webdriver:
+                class: webdriver.connectors.WebDriverConnector
+                driver: Firefox
+                firefox_profile: None
+                firefox_binary: None
+                timeout: 30
+                capabilities: None
+                proxy: None
+                executable_path: '/path/to/geckodriver'
+                firefox_options: None
+    
+    # the following is an example of chrome browser
+    chrome:
+        type: browser
+        connections:
+            webdriver:
+                class: webdriver.connectors.WebDriverConnector
+                driver: Chrome
+                executable_path: 
+                port:
+                chrome_options:
+                service_args:
+                desired_capabilities:
+                service_log_path:

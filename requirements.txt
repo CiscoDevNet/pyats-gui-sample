@@ -1,0 +1,7 @@
+This file describe the pypi packages needed to execute these examples.
+
+- pyATS pypi package
+- genie.webdriver pypi package
+- Mechanism to connect to selenium. More information here: https://selenium-python.readthedocs.io/
+
+
